@@ -1,0 +1,55 @@
+{
+    "input_files": [
+        {
+            "name": "expression_matrix",
+            "value": "unique_file_id_5f0d9cada30326.2860077",
+            "required": true,
+            "allow_multiple": false
+        }
+    ],
+    "arguments": [
+        {
+            "name": "execution",
+            "value": "tests/basic/run000"
+        },
+        {
+            "name": "project",
+            "value": "DoRothEA"
+        },
+        {
+            "name": "description",
+            "value": "test"
+        },
+        {
+            "name": "confidence_level",
+            "value": [
+                "A",
+                "B",
+                "C"
+            ]
+        },
+        {
+            "name": "minsize",
+            "value": 5
+        },
+        {
+            "name": "method",
+            "value": "scale"
+        }
+    ],
+    "output_files": [
+        {
+            "name": "dorothea_scores",
+            "required": true,
+            "allow_multiple": false,
+            "file": {
+                "file_type": "CSV",
+                "data_type": "dorothea_scores",
+                "meta_data": {
+                    "visible": true,
+                    "description": "Normalized enrichment scores for Transcription Factors"
+                }
+            }
+        }
+    ]
+}
